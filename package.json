@@ -1,0 +1,32 @@
+{
+  "name": "mern_stack_financial_app",
+  "version": "1.0.0",
+  "description": "Financial App built with the Mern Stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillippavlich/Mern_Stack_Financial_App.git"
+  },
+  "author": "Phillip Pavlich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phillippavlich/Mern_Stack_Financial_App/issues"
+  },
+  "homepage": "https://github.com/phillippavlich/Mern_Stack_Financial_App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
